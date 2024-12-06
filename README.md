@@ -1,35 +1,37 @@
 # DRF_API_with_JWT_Authentication_and_RBAC
-This project is a RESTful API built using Django Rest Framework (DRF) that implements user authentication with JWT (JSON Web Token) and Role-Based Access Control (RBAC). The API allows user registration, login, and role-based access to CRUD operations on a sample resource, "projects." 
+This project is a RESTful API built using Django Rest Framework (DRF) that implements user authentication with JWT (JSON Web Token) and Role-Based Access Control (RBAC). The API allows user registration, login, and role-based access to CRUD operations on a sample resource, "projects."
 
-# DRF_API_with_JWT_Authentication_and_RBAC
+## Features
 
-1. User Registration and Authentication:
+### 1. User Registration and Authentication:
   * Secure password hashing
   * JWT-based token authentication for secure communication.
 
-2. Role-Based Access Control (RBAC):
+### 2. Role-Based Access Control (RBAC):
   * Two user roles: admin and user.
   * Admin can create, update, delete, and view resources.
   * User can only view resources.
-3. CRUD Operations:
+
+### 3. CRUD Operations:
   * RESTful API endpoints for managing "projects."
 
-
-# Requirements
-
+## Requirements
   * Python 3.8+
   * Django 5.1+
   * Django Rest Framework (DRF)
-  * rest_framework_simplejwt
+  * `rest_framework_simplejwt`
   * A virtual environment (e.g., authenv)
 
-# Setup and Installation Guide
+## Setup and Installation Guide
 
-1. Clone the Repository
+### 1. Clone the Repository
+Clone the repository to your local machine:
 
-''' 
-  git clone <repository_url>
-  cd <repository_name>
+```bash
+git clone <repository_url>
+cd <repository_name>
+
+
 
 2. Set Up a Virtual Environment
 Create and activate a virtual environment:
