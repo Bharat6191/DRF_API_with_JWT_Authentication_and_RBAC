@@ -27,42 +27,41 @@ This project is a RESTful API built using Django Rest Framework (DRF) that imple
 ### 1. Clone the Repository
 Clone the repository to your local machine:
 
-```bash
+``` bash
 git clone <repository_url>
 cd <repository_name>
 
 
-
-2. Set Up a Virtual Environment
+### 2. Set Up a Virtual Environment
 Create and activate a virtual environment:
 
-'''
+'''bash
   python3 -m venv authenv
   source authenv/bin/activate
 
 3. Install Dependencies
 Install the required Python packages:
 
-'''
+'''bash
   pip install -r requirements.txt
 
 4. Create and Configure the Database
 Run migrations to set up the database:
 
-'''
+'''bash
   python manage.py makemigrations
   python manage.py migrate
 
 5. Create a Superuser
 Create an admin user to access the Django Admin interface:
-'''
+'''bash
   python manage.py createsuperuser
 
 
 6. Run the Server
 Start the Django development server:
 
-'''
+'''bash
 python manage.py runserver
 
 The server will be available at http://127.0.0.1:8000/.
@@ -73,14 +72,14 @@ The server will be available at http://127.0.0.1:8000/.
   * Register User
   * POST /account/register/
   * Body:
-    ''' 
+    ''' bash
         {
         "username": "example",
         "password": "password123",
         "role": "user"
         }
   * Response:
-    ```
+    ```bash
       {
         "message": "User registered successfully."
       }
