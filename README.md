@@ -82,7 +82,70 @@ The server will be available at http://127.0.0.1:8000/.
       {
         "message": "User registered successfully."
       }
+
+
+
+## User Login
+  * Login User
+  * POST /account/login/
+  * Body:
+    ''' 
+        {
+          "username": "example",
+          "password": "password123"
+        }
+  * Response:
     
+      {
+        "access_token": "JWT_TOKEN"
+      }
+
+
+## User Logout
+  * Logout User
+  * POST /account/logout/
+  * Body:
+    ''' 
+        {
+          "refresh_token": "REFRESH_TOKEN"
+        }
+  * Response:
+    
+      {
+        "message": "Successfully logged out."
+      }
+# CRUD Operations on "Projects"
+  ##  View Projects (Accessible to all users)
+  * GET /account/projects/
+  * Body:
+    ''' 
+        {
+  "projects": [
+      {
+      "id": 1,
+      "project_name": "Project A",
+      "created_by": "admin",
+      "created_at": "2024-12-01T12:00:00Z"
+    }
+  ]
+}
+
+##  Create Project (Admin only)
+  * POST /account/projects/create/
+  * Body:
+    {
+    "project_name": "Project B"
+    }
+  * Response:
+    {
+    "message": "Project created successfully."
+    }
+
+
+
+
+
+
 
 
 
